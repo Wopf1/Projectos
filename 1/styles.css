@@ -45,7 +45,7 @@ nav a{
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    width: 100vw;
+    width: 100%;
     height: calc(100vh - 50px);
     position: relative;
     top: 50px;
@@ -80,14 +80,14 @@ nav a{
 .about-us-wrap {
     width: 60%;        
     display: flex;
-    justify-content: space-between;
-    align-items: center;    
+    justify-content: space-between;       
     margin: 150px auto 100px;
+    align-items: stretch;
 }
 
 .about-us-text {
     width: 45%;
-    height: auto;    
+    height: auto;   
     text-align: justify;    
 }
 
@@ -97,12 +97,10 @@ nav a{
 
 .about-us-img-wrap {
     width: 45%;
-    height: auto;    
-}
-
-.about-us-img-wrap img {
-    height: 100%;
-    width: 100%;    
+    height: auto;
+    background-image: url(./img/anneliese-phillips-uv4-vl3liKM-unsplash.jpg);  
+    background-position: center;
+    background-size: cover;
 }
 
 .what-we-do {
@@ -349,7 +347,9 @@ footer {
 
     .about-us-img-wrap {
         width: 100%;
+        min-height: 200px;
         margin-top: 20px;
+        background-position: 0 90%;
     }
 
     .where-to-go-wrap {
