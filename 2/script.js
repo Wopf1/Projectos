@@ -12,7 +12,6 @@ menuIcon.addEventListener("click", () => {
     chandelierIcon.classList.remove("fa-skull-crossbones");
     menuList.style.display = "none";
   }
-  console.log("something seomt");
 });
 
 const button = document.querySelector(".color");
