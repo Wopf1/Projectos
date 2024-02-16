@@ -4,9 +4,8 @@
   box-sizing: border-box;
 }
 
-/* in progress*/
-body {
-  cursor: url("/img/icons8-wand-32.png");
+html {
+  cursor: url("img/icons8-wand-32.png"), auto;
 }
 
 :root {
