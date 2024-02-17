@@ -16,33 +16,41 @@ menuIcon.addEventListener("click", () => {
 
 const button = document.querySelector(".color");
 const header = document.querySelector("header");
-button.addEventListener("click", () => {
+
+const backgroundColor = () => {
   const roll = Math.floor(Math.random() * 3);
-  if (roll === 0) {
-    header.style.backgroundColor = "#15304c";
+  switch (roll) {
+    case 0:
+      header.style.backgroundColor = "#15304c";
+      break;
+    case 1:
+      header.style.backgroundColor = "#FFD700";
+      break;
+    case 2:
+      header.style.backgroundColor = "#B22222 ";
+      break;
   }
-  if (roll === 1) {
-    header.style.backgroundColor = "gold";
-  }
-  if (roll === 2) {
-    header.style.backgroundColor = "red";
-  }
-});
+};
+button.addEventListener("click", backgroundColor);
 
 const background = document.querySelector(".welcome");
 const button2 = document.querySelector(".background");
 
-button2.addEventListener("click", () => {
+const backgroundImage = () => {
   const roll = Math.floor(Math.random() * 3);
-  if (roll === 0) {
-    background.style.background = "url(./img/background.webp";
+  switch (roll) {
+    case 0:
+      background.style.background = "url(./img/background.webp";
+      break;
+    case 1:
+      background.style.background =
+        "url(./img/harry-potter-hbo-serial-hermiona-ron-bradavice-pozadi.jpg)";
+      break;
+    case 2:
+      background.style.background =
+        "url(./img/harry-potter-hbo-serial-postavy.jpg)";
+      break;
   }
-  if (roll === 1) {
-    background.style.background =
-      "url(./img/harry-potter-hbo-serial-hermiona-ron-bradavice-pozadi.jpg)";
-  }
-  if (roll === 2) {
-    background.style.background =
-      "url(./img/harry-potter-hbo-serial-postavy.jpg)";
-  }
-});
+};
+
+button2.addEventListener("click", backgroundImage);
